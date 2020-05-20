@@ -1,0 +1,10 @@
+{
+  "uuid": "%uuid%",
+  "name": "BookViewer",
+  "mainClass": "me.nullx.bookviewer.BookViewer",
+  "description": "Open books without right-clicking them",
+  "version": 1,
+  "author": "0x010",
+  "category": 2,
+  "icon": "https://i.imgur.com/qlMw3F4.png"
+}
