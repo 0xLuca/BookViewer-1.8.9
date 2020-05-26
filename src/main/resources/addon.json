@@ -2,6 +2,7 @@
   "uuid": "%uuid%",
   "name": "BookViewer",
   "mainClass": "me.nullx.bookviewer.BookViewer",
+  "transformerClass" : "me.nullx.bookviewer.asm.transformer.MinecraftRunTickTransformer",
   "description": "Open books without right-clicking them",
   "version": 1,
   "author": "0x010",
