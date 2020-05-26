@@ -46,7 +46,6 @@ public class MinecraftRunTickTransformer implements IClassTransformer {
     }
 
     private byte[] transform(int index, byte[] classBeingTransformed, boolean isObfuscated) {
-        System.out.println("CALLED TRANSFORMER FOR CLASS");
         try {
             ClassNode classNode = new ClassNode();
             ClassReader classReader = new ClassReader(classBeingTransformed);

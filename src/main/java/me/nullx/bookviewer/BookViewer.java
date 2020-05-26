@@ -55,12 +55,10 @@ public class BookViewer extends LabyModAddon {
     }
 
     public static void handleMouseInput() {
-        System.out.println("HANDLING MOUSE INPUT");
         Minecraft mc = Minecraft.getMinecraft();
         ItemStack currentItem = mc.thePlayer.inventory.getCurrentItem();
         KeyBinding useItem = mc.gameSettings.keyBindUseItem;
         if (useItem.isPressed() && mc.currentScreen == null && currentItem != null && currentItem.getItem() == Items.written_book) {
-            System.out.println("RIGHTCLICK BOOK");
             KeyBinding.setKeyBindState(useItem.getKeyCode(), false);
             BookViewer.openBook(currentItem);
         }
